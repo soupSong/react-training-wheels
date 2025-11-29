@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+
+}
+
+html, body{
+  height: 100%;
+  width: 100;
+}
+
+
+
+/* ROOT CONTAINER */
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* SECTION CARD */
+.section {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.12);
+}
+
+/* TITLES */
+.section h1 {
+  margin: 0 0 15px 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
+
+/* BUTTON */
+.section button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background: #4c6ef5;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.section button:hover {
+  background: #3b5bdb;
+  transform: translateY(-2px);
+}
+
+.section button:active {
+  transform: translateY(0);
+  background: #364fc7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .section {
+    padding: 20px;
+  }
+  .section h1 {
+    font-size: 1.5rem;
+  }
+  .section button {
+    width: 100%;
+  }
+}
